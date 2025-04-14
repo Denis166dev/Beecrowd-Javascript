@@ -1,0 +1,13 @@
+let input = require('fs').readFileSync('/dev/stdin', 'utf8');
+let [A, B, C] = input.split(' ').map(item => parseFloat(item));
+let pi =  3.14159;
+let areatri = (A * C) / 2.0;
+let areac = pi * Math.pow(C, 2);
+let areatra = ((A + B) * C) / 2.0;
+let areaq = B * B;
+let arear = A * B;
+console.log("TRIANGULO: " + areatri.toFixed(3));
+console.log("CIRCULO: " + areac.toFixed(3));
+console.log("TRAPEZIO: " + areatra.toFixed(3));
+console.log("QUADRADO: " + areaq.toFixed(3));
+console.log("RETANGULO: " + arear.toFixed(3));
